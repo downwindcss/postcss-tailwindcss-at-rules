@@ -2,18 +2,21 @@
 	"name": "@downwindcss/postcss-tailwindcss-at-rules",
 	"version": "0.0.0",
 	"description": "PostCSS plugin for Tailwind CSS At-rules",
-	"keywords": [ "postcss", "css", "postcss-plugin", "tailwindcss" ],
+	"keywords": [
+		"postcss",
+		"css",
+		"postcss-plugin",
+		"tailwindcss"
+	],
 	"scripts": {
 		"build": "microbundle",
 		"dev": "microbundle watch",
 		"test": "jest --coverage && eslint ."
 	},
-
 	"source": "src/index.js",
 	"exports": "./dist/index.modern.js",
 	"main": "./dist/index.js",
 	"unpkg": "./dist/index.umd.js",
-
 	"author": "Sung M. Kim <sungmkim80@gmail.com>",
 	"license": "MIT",
 	"repository": "downwindcss/postcss-tailwindcss-at-rules",
@@ -31,7 +34,8 @@
 		"lint-staged": "^10.5.4",
 		"microbundle": "^0.13.3",
 		"postcss": "^8.2.8",
-		"simple-git-hooks": "^2.0.2"
+		"simple-git-hooks": "^2.0.2",
+		"xregexp": "^5.0.2"
 	},
 	"simple-git-hooks": {
 		"pre-commit": "npx lint-staged"
@@ -47,7 +51,10 @@
 			"node": true,
 			"es6": true
 		},
-		"extends": [ "eslint:recommended", "plugin:jest/recommended" ],
+		"extends": [
+			"eslint:recommended",
+			"plugin:jest/recommended"
+		],
 		"rules": {
 			"jest/expect-expect": "off"
 		}

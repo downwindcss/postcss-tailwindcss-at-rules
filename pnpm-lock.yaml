@@ -9,6 +9,7 @@ specifiers:
   microbundle: ^0.13.3
   postcss: ^8.2.8
   simple-git-hooks: ^2.0.2
+  xregexp: ^5.0.2
 
 devDependencies:
   clean-publish: 2.2.0
@@ -19,6 +20,7 @@ devDependencies:
   microbundle: 0.13.3
   postcss: 8.3.4
   simple-git-hooks: 2.4.1
+  xregexp: 5.0.2
 
 packages:
 
@@ -1220,6 +1222,14 @@ packages:
       '@babel/plugin-transform-react-jsx': 7.14.5_@babel+core@7.14.6
       '@babel/plugin-transform-react-jsx-development': 7.14.5_@babel+core@7.14.6
       '@babel/plugin-transform-react-pure-annotations': 7.14.5_@babel+core@7.14.6
+    dev: true
+
+  /@babel/runtime-corejs3/7.14.6:
+    resolution: {integrity: sha512-Xl8SPYtdjcMoCsIM4teyVRg7jIcgl8F2kRtoCcXuHzXswt9UxZCS6BzRo8fcnCuP6u2XtPgvyonmEPF57Kxo9Q==}
+    engines: {node: '>=6.9.0'}
+    dependencies:
+      core-js-pure: 3.14.0
+      regenerator-runtime: 0.13.7
     dev: true
 
   /@babel/runtime/7.14.6:
@@ -2492,6 +2502,11 @@ packages:
     dependencies:
       browserslist: 4.16.6
       semver: 7.0.0
+    dev: true
+
+  /core-js-pure/3.14.0:
+    resolution: {integrity: sha512-YVh+LN2FgNU0odThzm61BsdkwrbrchumFq3oztnE9vTKC4KS2fvnPmcx8t6jnqAyOTCTF4ZSiuK8Qhh7SNcL4g==}
+    requiresBuild: true
     dev: true
 
   /cosmiconfig/5.2.1:
@@ -6919,6 +6934,12 @@ packages:
 
   /xmlchars/2.2.0:
     resolution: {integrity: sha512-JZnDKK8B0RCDw84FNdDAIpZK+JuJw+s7Lz8nksI7SIuU3UXJJslUthsi+uWBUYOwPFwW7W7PRLRfUKpxjtjFCw==}
+    dev: true
+
+  /xregexp/5.0.2:
+    resolution: {integrity: sha512-JPNfN40YMNSDxZrahMrmtNH1QqPJp0/qNeEJM2nnOlhcBdfCCjekPYFV2OnwKxwvpEYglH1RBotbpRRaEuCG8Q==}
+    dependencies:
+      '@babel/runtime-corejs3': 7.14.6
     dev: true
 
   /y18n/4.0.3:
