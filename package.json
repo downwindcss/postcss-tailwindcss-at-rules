@@ -2,12 +2,7 @@
 	"name": "@downwindcss/postcss-tailwindcss-at-rules",
 	"version": "0.0.1-alpha.0",
 	"description": "PostCSS plugin for Tailwind CSS At-rules",
-	"keywords": [
-		"postcss",
-		"css",
-		"postcss-plugin",
-		"tailwindcss"
-	],
+	"keywords": [ "postcss", "css", "postcss-plugin", "tailwindcss" ],
 	"scripts": {
 		"build": "microbundle",
 		"dev": "microbundle watch",
@@ -16,6 +11,9 @@
 		"publish:alpha": "pnpm publish --tag alpha",
 		"version:beta": "pnpm version prerelease --preid=beta",
 		"publish:beta": "pnpm publish --tag beta"
+	},
+	"publishConfig": {
+		"access": "public"
 	},
 	"source": "src/index.js",
 	"exports": "./dist/index.modern.js",
@@ -55,10 +53,7 @@
 			"node": true,
 			"es6": true
 		},
-		"extends": [
-			"eslint:recommended",
-			"plugin:jest/recommended"
-		],
+		"extends": [ "eslint:recommended", "plugin:jest/recommended" ],
 		"rules": {
 			"jest/expect-expect": "off"
 		}
