@@ -27,7 +27,9 @@ function hasAtRule(css, atRule, condition) {
 const newline = /\r?\n|\r|\t/gim;
 // https://stackoverflow.com/a/449000/4035
 const start = '(-?[_a-zA-Z]+[_a-zA-Z0-9-]*)+:\\(';
-const end = '\\)';
+// (?!]) is a negative lookahead to check against jit mode 'calc()'
+// https://stackoverflow.com/a/31201710/4035
+const end = '\\)(?!])';
 const flags = 'gimu';
 const valueNames = [ 'between', 'variant', 'inside-variant' ];
 
