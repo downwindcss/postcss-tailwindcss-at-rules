@@ -82,6 +82,35 @@ module.exports = {
 
 For more info on `@apply`, refer to the official Tailwind CSS [documentation][apply].
 
+### NOTE for @import
+
+If you are using `postcss-import`, you need to change 
+
+1. Tailwind CSS to use `@import`
+    ```diff
+    - @tailwind base;
+    - @tailwind components;
+    - @tailwind utilities;
+    + @import "tailwindcss/base";
+    + @import "tailwindcss/components";
+    + @import "tailwindcss/utilities";
+    
+    @import "../components/Sponsors/index.css";
+    ```
+    - Reference: [Tailwind CSS - Include Tailwind in your CSS](https://tailwindcss.com/docs/installation#include-tailwind-in-your-css)
+1. Make sure `postcss-import` shows up before this plugin.
+    ```js
+    module.exports = {
+    	plugins: {
+    		'postcss-import': {},
+    		'@downwindcss/postcss-tailwindcss-at-rules': {},
+    		tailwindcss: {},
+    		autoprefixer: {}
+    	}
+    };
+    ```
+
+
 ## Demo
 
 - **video**: https://imgur.com/a/X14w1ud
