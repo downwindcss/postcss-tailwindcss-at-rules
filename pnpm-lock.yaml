@@ -11,6 +11,9 @@ specifiers:
   simple-git-hooks: ^2.0.2
   xregexp: ^5.0.2
 
+dependencies:
+  xregexp: 5.0.2
+
 devDependencies:
   clean-publish: 2.2.0
   eslint: 7.28.0
@@ -20,7 +23,6 @@ devDependencies:
   microbundle: 0.13.3
   postcss: 8.3.4
   simple-git-hooks: 2.4.1
-  xregexp: 5.0.2
 
 packages:
 
@@ -1230,7 +1232,7 @@ packages:
     dependencies:
       core-js-pure: 3.14.0
       regenerator-runtime: 0.13.7
-    dev: true
+    dev: false
 
   /@babel/runtime/7.14.6:
     resolution: {integrity: sha512-/PCB2uJ7oM44tz8YhC4Z/6PeOKXp4K588f+5M3clr1M4zbqztlo0XEfJ2LEzj/FgwfgGcIdl8n7YYjTCI0BYwg==}
@@ -2507,7 +2509,7 @@ packages:
   /core-js-pure/3.14.0:
     resolution: {integrity: sha512-YVh+LN2FgNU0odThzm61BsdkwrbrchumFq3oztnE9vTKC4KS2fvnPmcx8t6jnqAyOTCTF4ZSiuK8Qhh7SNcL4g==}
     requiresBuild: true
-    dev: true
+    dev: false
 
   /cosmiconfig/5.2.1:
     resolution: {integrity: sha512-H65gsXo1SKjf8zmrJ67eJk8aIRKV5ff2D4uKZIBZShbhGSpEmsQOPW/SKMKYhSTrqR7ufy6RP69rPogdaPh/kA==}
@@ -5789,7 +5791,6 @@ packages:
 
   /regenerator-runtime/0.13.7:
     resolution: {integrity: sha512-a54FxoJDIr27pgf7IgeQGxmqUNYrcV338lf/6gH456HZ/PhX+5BcwHXG9ajESmwe6WRO0tAzRUrRmNONWgkrew==}
-    dev: true
 
   /regenerator-transform/0.14.5:
     resolution: {integrity: sha512-eOf6vka5IO151Jfsw2NO9WpGX58W6wWmefK3I1zEGr0lOD0u8rwPaNqQL1aRxUaxLeKO3ArNh3VYg1KbaD+FFw==}
@@ -6940,7 +6941,7 @@ packages:
     resolution: {integrity: sha512-JPNfN40YMNSDxZrahMrmtNH1QqPJp0/qNeEJM2nnOlhcBdfCCjekPYFV2OnwKxwvpEYglH1RBotbpRRaEuCG8Q==}
     dependencies:
       '@babel/runtime-corejs3': 7.14.6
-    dev: true
+    dev: false
 
   /y18n/4.0.3:
     resolution: {integrity: sha512-JKhqTOwSrqNA1NY5lSztJ1GrBiUodLMmIZuLiDaMRJ+itFd+ABVE8XBjOvIWL+rSqNDC74LCSFmlb/U4UZ4hJQ==}

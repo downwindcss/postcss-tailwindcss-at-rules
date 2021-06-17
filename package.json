@@ -41,8 +41,7 @@
 		"lint-staged": "^10.5.4",
 		"microbundle": "^0.13.3",
 		"postcss": "^8.2.8",
-		"simple-git-hooks": "^2.0.2",
-		"xregexp": "^5.0.2"
+		"simple-git-hooks": "^2.0.2"
 	},
 	"simple-git-hooks": {
 		"pre-commit": "npx lint-staged"
@@ -73,5 +72,8 @@
 				"statements": 100
 			}
 		}
+	},
+	"dependencies": {
+		"xregexp": "^5.0.2"
 	}
 }
