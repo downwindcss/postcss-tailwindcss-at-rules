@@ -75,6 +75,6 @@
 		}
 	},
 	"dependencies": {
-		"xregexp": "^5.0.2"
+		"@downwindcss/variant-group": "^1.0.2"
 	}
 }

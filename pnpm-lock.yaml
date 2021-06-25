@@ -1,6 +1,7 @@
 lockfileVersion: 5.3
 
 specifiers:
+  '@downwindcss/variant-group': ^1.0.2
   clean-publish: ^2.1.0
   eslint: ^7.21.0
   eslint-plugin-jest: ^24.2.1
@@ -9,10 +10,9 @@ specifiers:
   microbundle: ^0.13.3
   postcss: ^8.2.8
   simple-git-hooks: ^2.0.2
-  xregexp: ^5.0.2
 
 dependencies:
-  xregexp: 5.0.2
+  '@downwindcss/variant-group': 1.0.2
 
 devDependencies:
   clean-publish: 2.2.0
@@ -1287,6 +1287,14 @@ packages:
       exec-sh: 0.3.6
       minimist: 1.2.5
     dev: true
+
+  /@downwindcss/variant-group/1.0.2:
+    resolution: {integrity: sha512-hPbifeOHmGTS99ZhvXQCBRr/8LY3PD3YzNp0/trTP0578PtoWluFv2cdTxyE1HRnnGcl6qruuNZZQf0GoqhD0w==}
+    engines: {node: '>=10'}
+    dependencies:
+      lodash.zipwith: 4.2.0
+      xregexp: 5.0.2
+    dev: false
 
   /@eslint/eslintrc/0.4.2:
     resolution: {integrity: sha512-8nmGq/4ycLpIwzvhI4tNDmQztZ8sp+hI7cyG8i1nQDhkAbRzHpXPidRAHlNvCZQpJTKw5ItIpMw9RSToGF00mg==}
@@ -4728,6 +4736,10 @@ packages:
   /lodash.uniq/4.5.0:
     resolution: {integrity: sha1-0CJTc662Uq3BvILklFM5qEJ1R3M=}
     dev: true
+
+  /lodash.zipwith/4.2.0:
+    resolution: {integrity: sha1-r6zwP9LzhK8p4mPDxr2juA4/Uf0=}
+    dev: false
 
   /lodash/4.17.21:
     resolution: {integrity: sha512-v2kDEe57lecTulaDIuNTPy3Ry4gLGJ6Z1O3vE1krgXZNrsQ+LFTGHVxVjcXPs17LhbZVGedAJv8XZ1tvj5FvSg==}
